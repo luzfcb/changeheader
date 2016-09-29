@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Test Extension Options</title>
+    <link rel="stylesheet" href="furtive.min.css">
+    <style>
+        body {
+            padding: 10px;
+        }
+
+        #enabled-sites-list {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="bg--off-white py2">
+    <section class="measure p2" id="forms">
+        <h3>Forms</h3>
+
+        <p class="h4">
+            Forms are typically a key component for most websites and web applications. As
+            such, Furtive seeks to keep them consistent, coherent, and elegant for all devices.
+        </p>
+
+        <div action="#" role="form" class="my2">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name...">
+
+            <label for="enable-sites-input">
+                Adicionar site:
+                <div class="grd">
+                    <div class="grd-row">
+                        <div class="grd-row-col-4-6">
+                            <input type="text" id="enable-sites-input">
+                        </div>
+                    </div>
+                    <div class="grd-row">
+                        <div class="grd-row-col-2-6">
+                            <button id="adicionar_para_lista">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </label>
+            <label for="enabled-sites-list">
+                Sites adicionados:
+                <div class="grd">
+                    <div class="grd-row">
+                        <div class="grd-row-col-6-6">
+                            <select name="enable-sites" id="enabled-sites-list" class="grd-row-col-6-6" multiple>
+                            </select>
+                        </div>
+                    </div>
+            </label>
+
+        </div>
+    </section>
+</div>
+
+
+Favorite color:
+<select id="color">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="blue">blue</option>
+    <option value="yellow">yellow</option>
+</select>
+<label>
+    <input type="text" id="enable-sites-input">
+    <button id="adicionar_para_lista">Adicionar</button>
+    <select name="enable-sites" id="enabled-sites-list" multiple>
+    </select>
+
+</label>
+
+<label>
+    <input type="checkbox" id="like">
+    I like colors.
+</label>
+
+<div id="status"></div>
+<button id="save">Save</button>
+<script src="zepto.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

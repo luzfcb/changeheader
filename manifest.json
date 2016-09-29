@@ -1,15 +1,20 @@
 {
-	"manifest_version": 2,
-	"name": "ChangeHeader",
-	"version": "0.0.3",
-	"permissions": [
-		"webRequest",
-		"webRequestBlocking",
-		"https://*/*",
-		"http://*/*"
-	],
-	"background": {
-    	"scripts": ["background.js"]
-  	}
-
+  "manifest_version": 2,
+  "name": "ChangeHeader",
+  "version": "0.0.3",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
 }
